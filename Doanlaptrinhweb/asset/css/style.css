@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+.header {
+    width: 100%;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-top {
+    background-color: #2d3436;
+    padding: 0.5rem 5%;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid #353b48;
+}
+
+.header-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #dfe6e9;
+    font-size: 0.9rem;
+}
+
+.header-links a:hover {
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 5%;
+    background-color: #ffffff;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2d3436;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+.nav-links a.active {
+    color: #0984e3;
+}
+
+.nav-links a:hover {
+    color: #0984e3;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.search-box {
+    color: #2d3436;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2d3436;
+    font-size: 0.9rem;
+}
+
+.phone-number i {
+    color: #0984e3;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2d3436;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.user-profile i:last-child {
+    font-size: 0.8rem;
+    color: #636e72;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.login-btn, .register-btn {
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    color: #2d3436;
+}
+
+.login-btn:hover {
+    color: #0984e3;
+}
+
+.register-btn {
+    background-color: #0984e3;
+    color: white;
+    border: none;
+}
+
+.register-btn:hover {
+    background-color: #0773c5;
+}
+
+.contact-btn {
+    background-color: #fae3e3;
+    color: #636e72;
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #f8d7d7;
+}
+
+/* Hero section styles */
+.hero {
+    display: flex;
+    padding: 5rem 5%;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.hero-content {
+    flex: 1;
+    padding-top: 2rem;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #2d3436;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    color: #636e72;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    max-width: 80%;
+}
+
+.explore-btn {
+    background-color: #fae3e3;
+    color: #636e72;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #f8d7d7;
+}
+
+/* Testimonial styles */
+.testimonial-card {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    max-width: 300px;
+    border: 1px solid #e1e8ed;
+}
+
+.testimonial-content {
+    margin-bottom: 1rem;
+    color: #2d3436;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.author-info h4 {
+    color: #2d3436;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.author-info p {
+    color: #636e72;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
